@@ -151,7 +151,7 @@
 
         /**
          * [toggle toggles element's show, props, attribs, ....]
-         * @param {Object[]} elements [array of objects that has element and toggle targets]
+         * @param {Object[]} targets [array of objects that has element and toggle targets]
          * @example [{on:"", classes:[], attributes:[]}, {...}, ...]
          * 
          */
@@ -412,9 +412,9 @@
 		* @param {string} element [presents the query selector string [i.e. #id, .class]]
 		* @param {function} callback [is a function or string that presents a function name [i.e. function(){*Do things*}] [i.e. 'functionName']]
 		* @param {string} success_msg [fires notification by the message if the location has been added successfully]
-		* @param {string} exception [fires notification if the browser doesn't support the geolocation]
+		* @throw {Error} exception [fires notification if the browser doesn't support the geolocation]
 		*/
-		setLocation(element, callback = null, success_msg = null, exception = null)
+		setLocation(element, callback = null, success_msg = null)
 		{
 			if (navigator.geolocation) {
 			    navigator.geolocation.getCurrentPosition(function(position){
