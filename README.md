@@ -1,6 +1,7 @@
 # Commander.JS
 These is a JS Class Enables user to call its methods from DOM elements
 Example : 
+
 \<div class = 'commander' data-command='formSubmit' data-form='#form' data-url='http://google.com'>
 
 **1**. **Property : element** 
