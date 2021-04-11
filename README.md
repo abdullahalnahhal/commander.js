@@ -2,7 +2,10 @@
 These is a JS Class Enables user to call its methods from DOM elements
 Example : 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa03c23db2bd722f063ed6925daa3da676095606
 \<div class = 'commander' data-command='formSubmit' data-form='#form' data-url='http://google.com'>
 
 **1**. **Property : element** 
