@@ -1,32 +1,52 @@
 # Commander.JS
 These is a JS Class Enables user to call its methods from DOM elements
 Example : 
+
+
 \<div class = 'commander' data-command='formSubmit' data-form='#form' data-url='http://google.com'>
 
 **1**. **Property : element** 
+
 	Element That triggered (fired) the commander method .
+
 **2**. **Property : data** 
+
     All data set of the element
+
 **3**. **Method : test** [Alerts test to make testing of that commander and make sure that it works well ]
 
 **4**. **Method : constructor** [instantiate an instance variables]
+
     Arguments : 
+
 - {DOM} **element** : The DOM element that fired the commander .
 - {JSON} **data** :  The dataset on the element .
 
 **5**. **Method : validate** [Validates If Data has required fields]
+
     Arguments : 
+
 - {DOM} **requirements** : The DOM element that fired the commander .
 - {JSON} **data** :  The dataset on the element .
 
 **6**. **Method : formValidity** [form forces the HTML inputs to show validations]
+
+	Arguments : 
+
 -	{string} **form** : presents the query string that makes selection .
 
 **7**. **Method : formSubmit** [submits form]
+
+Arguments : 
+
 - {string} **form** : The querySeletor of the form .
 - {string} **url | nul** :  The form action url .
 
 **8**.**Method : submitSelected** [submits the selected DOM elements]
+
+Arguments : 
+
+
 - {string} **form** : querySelector of the form element .
 - {Object} **selections** : presents object of selections with its name .
 - {string} **url** : url that will be added to the form before submit .
